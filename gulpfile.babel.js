@@ -12,20 +12,16 @@ import { Browsersync } from "./gulp/tasks/Browsersync.js";
 import config from "./paths.js";
 import { WebpImages } from "./gulp/tasks/WebpImages.js";
 import { AvifImages } from "./gulp/tasks/AvifImages.js";
-
+import { FontsWoff2 } from "./gulp/tasks/FontsWoff2.js";
+import { FontsWoff } from "./gulp/tasks/FontsWoff.js";
 export const sass = gulpSass(dartSass);
 export const uglify = require("gulp-uglify-es").default;
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
 const fs = require('fs');
-
-const fontsWoff = (cb) => {
-  return src(config.fonts.src)
-    .pipe(dest(config.fonts.dest)),
-    cb();
-}
+exports.FontsWoff = FontsWoff;
 exports.AvifImages = AvifImages;
-exports.fontsWoff = fontsWoff;
+exports.FontsWoff2 = FontsWoff2;
 exports.WebpImages = WebpImages;
 exports.Clean = Clean;
 exports.Sprite = Sprite;
@@ -37,7 +33,8 @@ exports.watch = watch;
 exports.Browsersync = Browsersync;
 const build = series(
   Clean,
-  parallel(fontsWoff),
+  parallel(FontsWoff),
+  parallel(FontsWoff2),
   parallel(AvifImages),
   parallel(WebpImages),
   parallel(Sprite),
