@@ -1,10 +1,10 @@
 "use strict";
-const { src, dest } = require("gulp");
+const { src, dest, lastRun } = require("gulp");
 const config = require("../../paths.js");
 const cwebp = require("gulp-cwebp");
 
 const WebpImages = (cb) => {
-  return src(config.images.src, { encoding: false })
+  return src(config.images.src, { encoding: false }, { since: lastRun(WebpImages) })
     .pipe(cwebp())
     .pipe(dest(config.images.dest)),
     cb();

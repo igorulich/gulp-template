@@ -38,11 +38,11 @@ section.header {
     left: 0;
     content: "";
     width: 73px;
-    height: 64px;
+      height: 64px;
 
     @extend %svg-common;
 
-    background-position: 0 0;
+    background-position: 14.209591474245116% 15.503875968992247%;
   }
 }
 
@@ -57,12 +57,12 @@ section.header {
     top: 0;
     left: 0;
     content: "";
-    width: 67px;
-    height: 64px;
+    width: 91px;
+      height: 45px;
 
     @extend %svg-common;
 
-    background-position: 62.5% 60.204081632653065%;
+  background-position: 44.58715596330275% 43.177570093457945%;
     z-index: z("home");
   }
 }
