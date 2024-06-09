@@ -18,7 +18,6 @@ export const sass = gulpSass(dartSass);
 export const uglify = require("gulp-uglify-es").default;
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
-const fs = require('fs');
 exports.FontsWoff = FontsWoff;
 exports.AvifImages = AvifImages;
 exports.FontsWoff2 = FontsWoff2;

@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
-    "fs": "^0.0.1-security",
     "gulp-avif": "^1.1.1",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
