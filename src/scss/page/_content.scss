@@ -1,12 +1,9 @@
 section.content {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+@include relative;
   height: 200px;
  
 
-  h2 {
+  h4{
     width: 100%;
     text-align: center;
     color: $text;

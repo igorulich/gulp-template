@@ -2,49 +2,9 @@
     background: url("sprite.svg") no-repeat;
 }
 
-.arrow-left {
-    @extend %svg-common;
-    background-position: 0 0;
-}
-
-.arrow-left-dims {
-    width: 40px;
-    height: 40px;
-}
-
-.arrow-right {
-    @extend %svg-common;
-    background-position: 6.7114093959731544% 7.407407407407407%;
-}
-
-.arrow-right-dims {
-    width: 40px;
-    height: 40px;
-}
-
-.audit {
-    @extend %svg-common;
-    background-position: 14.209591474245116% 15.503875968992247%;
-}
-
-.audit-dims {
-    width: 73px;
-    height: 64px;
-}
-
-.brief-bag {
-    @extend %svg-common;
-    background-position: 26.424870466321245% 27.376425855513308%;
-}
-
-.brief-bag-dims {
-    width: 57px;
-    height: 54px;
-}
-
 .facebook {
     @extend %svg-common;
-    background-position: 34.82587064676617% 36.19744058500914%;
+    background-position: 0 0;
 }
 
 .facebook-dims {
@@ -52,74 +12,14 @@
     height: 33px;
 }
 
-.helo {
-    @extend %svg-common;
-    background-position: 44.58715596330275% 43.177570093457945%;
-}
-
-.helo-dims {
-    width: 91px;
-    height: 45px;
-}
-
-.home {
-    @extend %svg-common;
-    background-position: 58.699472759226715% 53.48837209302326%;
-}
-
-.home-dims {
-    width: 67px;
-    height: 64px;
-}
-
 .instagram {
     @extend %svg-common;
-    background-position: 66.50082918739635% 62.157221206581355%;
+    background-position: 50% 50%;
 }
 
 .instagram-dims {
     width: 33px;
     height: 33px;
-}
-
-.location {
-    @extend %svg-common;
-    background-position: 71.14754098360656% 67.32851985559567%;
-}
-
-.location-dims {
-    width: 26px;
-    height: 26px;
-}
-
-.logo {
-    @extend %svg-common;
-    background-position: 84.40366972477064% 82.43801652892562%;
-}
-
-.logo-dims {
-    width: 91px;
-    height: 96px;
-}
-
-.mail {
-    @extend %svg-common;
-    background-position: 90.32786885245902% 89.35018050541517%;
-}
-
-.mail-dims {
-    width: 26px;
-    height: 26px;
-}
-
-.phone {
-    @extend %svg-common;
-    background-position: 94.59016393442623% 94.04332129963899%;
-}
-
-.phone-dims {
-    width: 26px;
-    height: 26px;
 }
 
 .whatsapp {

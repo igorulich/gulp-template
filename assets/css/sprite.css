@@ -1,41 +1,5 @@
-.arrow-left {
-    background: url("sprite.svg") 0 0 no-repeat;
-}
-
-.arrow-left-dims {
-    width: 40px;
-    height: 40px;
-}
-
-.arrow-right {
-    background: url("sprite.svg") 6.7114093959731544% 7.407407407407407% no-repeat;
-}
-
-.arrow-right-dims {
-    width: 40px;
-    height: 40px;
-}
-
-.audit {
-    background: url("sprite.svg") 14.209591474245116% 15.503875968992247% no-repeat;
-}
-
-.audit-dims {
-    width: 73px;
-    height: 64px;
-}
-
-.brief-bag {
-    background: url("sprite.svg") 26.424870466321245% 27.376425855513308% no-repeat;
-}
-
-.brief-bag-dims {
-    width: 57px;
-    height: 54px;
-}
-
 .facebook {
-    background: url("sprite.svg") 34.82587064676617% 36.19744058500914% no-repeat;
+    background: url("sprite.svg") 0 0 no-repeat;
 }
 
 .facebook-dims {
@@ -43,67 +7,13 @@
     height: 33px;
 }
 
-.helo {
-    background: url("sprite.svg") 44.58715596330275% 43.177570093457945% no-repeat;
-}
-
-.helo-dims {
-    width: 91px;
-    height: 45px;
-}
-
-.home {
-    background: url("sprite.svg") 58.699472759226715% 53.48837209302326% no-repeat;
-}
-
-.home-dims {
-    width: 67px;
-    height: 64px;
-}
-
 .instagram {
-    background: url("sprite.svg") 66.50082918739635% 62.157221206581355% no-repeat;
+    background: url("sprite.svg") 50% 50% no-repeat;
 }
 
 .instagram-dims {
     width: 33px;
     height: 33px;
-}
-
-.location {
-    background: url("sprite.svg") 71.14754098360656% 67.32851985559567% no-repeat;
-}
-
-.location-dims {
-    width: 26px;
-    height: 26px;
-}
-
-.logo {
-    background: url("sprite.svg") 84.40366972477064% 82.43801652892562% no-repeat;
-}
-
-.logo-dims {
-    width: 91px;
-    height: 96px;
-}
-
-.mail {
-    background: url("sprite.svg") 90.32786885245902% 89.35018050541517% no-repeat;
-}
-
-.mail-dims {
-    width: 26px;
-    height: 26px;
-}
-
-.phone {
-    background: url("sprite.svg") 94.59016393442623% 94.04332129963899% no-repeat;
-}
-
-.phone-dims {
-    width: 26px;
-    height: 26px;
 }
 
 .whatsapp {

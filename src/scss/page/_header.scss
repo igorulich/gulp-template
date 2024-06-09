@@ -34,15 +34,16 @@ section.header {
 
   &::after {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
     content: "";
-    width: 73px;
-      height: 64px;
+    width: 33px;
+      height: 33px;
 
     @extend %svg-common;
 
-    background-position: 14.209591474245116% 15.503875968992247%;
+    background-position: 100% 100%;
   }
 }
 
@@ -54,15 +55,17 @@ section.header {
 
   &::after {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+   
     content: "";
-    width: 91px;
-      height: 45px;
+    width: 33px;
+      height: 33px;
 
     @extend %svg-common;
 
-  background-position: 44.58715596330275% 43.177570093457945%;
+    background-position: 0 0;
     z-index: z("home");
   }
 }
