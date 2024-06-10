@@ -19,6 +19,7 @@ export const uglify = require("gulp-uglify-es").default;
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
 export var newer = require("gulp-newer");
+export const cache = require("gulp-cache");
 exports.FontsWoff = FontsWoff;
 exports.AvifImages = AvifImages;
 exports.FontsWoff2 = FontsWoff2;
