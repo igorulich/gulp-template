@@ -6,8 +6,8 @@ var rename = require("gulp-rename");
 var sourcemaps = require("gulp-sourcemaps");
 var postcss = require("gulp-postcss");
 var plumber = require("gulp-plumber");
-var browserSync = require('browser-sync').create();
-const sass = require('gulp-sass')(require('sass'));
+var browserSync = require("browser-sync").create();
+const sass = require("gulp-sass")(require("sass"));
 function Styles(cb) {
   return (
     src(config.styles.src)

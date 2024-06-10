@@ -2,7 +2,7 @@
 const { src, dest } = require("gulp");
 const config = require("../paths.js");
 const fileinclude = require("gulp-file-include");
-var browserSync = require('browser-sync').create();
+var browserSync = require("browser-sync").create();
 var rename = require("gulp-rename");
 var gulpHtmlBemValidator = require("gulp-html-bem-validator");
 function Html(cb) {

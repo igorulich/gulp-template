@@ -4,7 +4,7 @@ const config = require("../paths.js");
 const  {Styles } = require("./Styles.js");
 const { Scripts } = require("./Scripts.js");
 const { Html } = require("./Html.js");
-var browserSync = require('browser-sync').create();
+var browserSync = require("browser-sync").create();
 var reload = browserSync.reload;
 function Browsersync(cb) {
   reload(),
