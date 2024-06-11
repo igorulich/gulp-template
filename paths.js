@@ -38,18 +38,22 @@ const config = {
     watch: `./src/fonts/*.ttf`
   },
   build: {
-    htmlbuild: `./assets/*.html`,
-    cssbuild: `./assets/css/*.css`,
-    jsbuild: `./assets/js/*.js`,
-    imgbuild: `./assets/images/*.{avif,webp}`,
-    fontbuild: `./assets/fonts/*.{woff,woff2}`
+    htmlbd: `./assets/*.html`,
+    cssbd: `./assets/css/*.css`,
+    jsbd: `./assets/js/*.js`,
+    imgbd: `./assets/images/*.{avif,webp}`,
+    fontbd: `./assets/fonts/*.{woff,woff2}`,
+    spritebd: `./assets/css/*.sprite.{css,svg}`,
+    recbd:`./src/resources/**`
   },
   dist: {
-    htmlbuild: `./dist`,
-    cssbuild: `./dist/css`,
-    jsbuild: `./dist/js`,
-    imgbuild: `./dist/images`,
-    fontbuild: `./dist/fonts`
+    htmlbd: `./dist`,
+    cssbd: `./dist/css`,
+    jsbd: `./dist/js`,
+    imgbd: `./dist/images`,
+    fontbd: `./dist/fonts`,
+    spritebd: `./dist/css/*.sprite.{css,svg}`,
+    recbd:`./src/resources/**`
   }
 };
 
