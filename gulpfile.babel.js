@@ -14,12 +14,13 @@ import { WebpImages } from "./#tasks/WebpImages.js";
 import { AvifImages } from "./#tasks/AvifImages.js";
 import { FontsWoff2 } from "./#tasks/FontsWoff2.js";
 import { FontsWoff } from "./#tasks/FontsWoff.js";
+export const cache = require("gulp-cache");
 export const sass = gulpSass(dartSass);
 export const uglify = require("gulp-uglify-es").default;
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
 export var newer = require("gulp-newer");
-export const cache = require("gulp-cache");
+
 exports.FontsWoff = FontsWoff;
 exports.AvifImages = AvifImages;
 exports.FontsWoff2 = FontsWoff2;
