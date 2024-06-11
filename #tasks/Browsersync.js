@@ -18,8 +18,8 @@ function Browsersync(cb) {
       port: 3000,
       ui: { port: 3001 },
     }),
-    watch(config.scripts.watch, Scripts, reload),
-    watch(config.styles.watch, Styles, reload),
+    watch(config.scripts.watch, Scripts).on("change", browserSync.reload),
+    watch(config.styles.watch, Styles).on("change", browserSync.reload),
     watch(config.html.watch, Html).on("change", browserSync.reload),
     cb();
 }
