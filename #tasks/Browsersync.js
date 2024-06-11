@@ -15,6 +15,8 @@ function Browsersync(cb) {
       server: {
         baseDir: config.server,
       },
+      port: 3000,
+      ui: { port: 3001 },
     }),
     watch(config.scripts.watch, Scripts, reload),
     watch(config.styles.watch, Styles, reload),
