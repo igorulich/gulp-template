@@ -36,7 +36,15 @@ const config = {
     src: [`./src/fonts/*.ttf`],
     dest: `./assets/fonts`,
     watch: `./src/fonts/*.ttf`
-  }
+  },
+  build: {
+    htmlbuild: `./assets/*.html`,
+    cssbuild: `./assets/css/*.css`,
+    jsbuild: `./assets/js/*.js`,
+    imgbuild: `./assets/images/*.{avif,webp}`,
+    fontbuild: `./assets/fonts/*.{woff,woff2}`
+  },
+  dist:`./dist`
 };
 
 module.exports = config;
