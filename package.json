@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "clean": "rimraf maps",
-    "gulp": "gulp development",
+    "gulp": " gulp development",
     "gulp-build": "gulp production"
   },
   "keywords": [

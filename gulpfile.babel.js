@@ -33,28 +33,33 @@ exports.Scripts = Scripts;
 exports.Html = Html;
 exports.watch = watch;
 exports.Browsersync = Browsersync;
-if (process.env.NODE_ENV !== 'production') {
-  const development = series(
-    Clean,
-    parallel(FontsWoff),
-    parallel(FontsWoff2),
-    parallel(AvifImages),
-    parallel(WebpImages),
-    parallel(Sprite),
-    parallel(Resources),
-    parallel(Styles),
-    parallel(Scripts),
-    parallel(Html),
-    parallel(Browsersync),
-  );
-  exports.development = development;
-} if (process.env.NODE_ENV === 'production') {
-  const production = series(
-  
-    console.log("Production mode")
-  );
-   
- 
-  exports.production = production;
-}
 
+const development = series(
+  Clean,
+  parallel(FontsWoff),
+  parallel(FontsWoff2),
+  parallel(AvifImages),
+  parallel(WebpImages),
+  parallel(Sprite),
+  parallel(Resources),
+  parallel(Styles),
+  parallel(Scripts),
+  parallel(Html),
+  parallel(Browsersync)
+);
+exports.development = development;
+
+const production = series(
+  Clean,
+  parallel(FontsWoff),
+  parallel(FontsWoff2),
+  parallel(AvifImages),
+  parallel(WebpImages),
+  parallel(Sprite),
+  parallel(Resources),
+  parallel(Styles),
+  parallel(Scripts),
+  parallel(Html),
+  parallel(Browsersync)
+);
+exports.production = production;
