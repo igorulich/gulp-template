@@ -44,7 +44,13 @@ const config = {
     imgbuild: `./assets/images/*.{avif,webp}`,
     fontbuild: `./assets/fonts/*.{woff,woff2}`
   },
-  dist:`./dist`
+  dist: {
+    htmlbuild: `./dist`,
+    cssbuild: `./dist/css`,
+    jsbuild: `./dist/js`,
+    imgbuild: `./dist/images`,
+    fontbuild: `./dist/fonts`
+  }
 };
 
 module.exports = config;

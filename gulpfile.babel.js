@@ -50,6 +50,7 @@ if (process.env.NODE_ENV !== 'production') {
   exports.development = development;
 } if (process.env.NODE_ENV === 'production') {
   const production = series(
+  
     console.log("Production mode")
   );
    
