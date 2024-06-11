@@ -6,9 +6,15 @@ section.footer {
   height: 200px;
  
 
-  h3{
+  #block h3{
     width: 100%;
     text-align: center;
     color: $descr;
+    cursor: pointer;
   }
+}
+.hover {
+  display: none;
+  color:$white;
+  text-align: center;
 }
