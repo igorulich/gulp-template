@@ -50,16 +50,6 @@ const development = series(
 exports.development = development;
 
 const production = series(
-  Clean,
-  parallel(FontsWoff),
-  parallel(FontsWoff2),
-  parallel(AvifImages),
-  parallel(WebpImages),
-  parallel(Sprite),
-  parallel(Resources),
-  parallel(Styles),
-  parallel(Scripts),
-  parallel(Html),
   parallel(Browsersync)
 );
 exports.production = production;
