@@ -1,18 +1,6 @@
 section.content {
 @include relative;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+
 }
 
-.btn.btn-info h4{
-    text-align: center;
-    color: $text;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 200;
-  }
 

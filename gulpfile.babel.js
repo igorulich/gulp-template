@@ -2,6 +2,7 @@
 import { watch, series, parallel, src, dest } from "gulp";
 import dartSass from "sass";
 import gulpSass from "gulp-sass";
+import config from "./paths.js";
 import { Clean } from "./#tasks/Clean.js";
 import { Resources } from "./#tasks/Resources.js";
 import { Sprite } from "./#tasks/Sprite.js";
@@ -9,7 +10,6 @@ import { Styles } from "./#tasks/Styles.js";
 import { Scripts } from "./#tasks/Scripts.js";
 import { Html } from "./#tasks/Html.js";
 import { Browsersync } from "./#tasks/Browsersync.js";
-import config from "./paths.js";
 import { WebpImages } from "./#tasks/WebpImages.js";
 import { AvifImages } from "./#tasks/AvifImages.js";
 import { FontsWoff2 } from "./#tasks/FontsWoff2.js";
