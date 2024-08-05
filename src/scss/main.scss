@@ -1,0 +1,16 @@
+@import "./var";
+@import "./sprite";
+@import "./mixins/relative";
+@import "./mixins/zindex";
+@import "./page/header";
+@import "./page/content";
+@import "./page/footer";
+@import "./fonts";
+
+body {
+  text-transform: uppercase;
+  font-size: calc(19px + 18 * (100vw / 1920));
+  line-height: calc(11px + 4.135417vh);
+  word-spacing: calc(0.1px + 0.015625vw);
+  background: $bg;
+}
