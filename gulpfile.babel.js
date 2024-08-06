@@ -32,7 +32,7 @@ exports.Html = Html;
 exports.watch = watch;
 exports.Browsersync = Browsersync;
 exports.production = production;
-
+exports.development = development;
 function production() {
   const production = series(
     Clean,
@@ -49,7 +49,8 @@ function production() {
   );
   production();
 }
-const development = series(
+function development() {
+ const development = series(
   Clean,
   parallel(FontsWoff),
   parallel(FontsWoff2),
@@ -62,5 +63,6 @@ const development = series(
   parallel(Html),
   parallel(Browsersync),
 );
-
-export default development;
+  development();
+}
+ 

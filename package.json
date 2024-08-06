@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "clean": "rimraf maps assets",
-    "dev": "gulp --development",
-    "prod":"gulp --production"
+    "dev": "gulp development",
+    "prod":"gulp production"
   },
   "keywords": [
     "scripts"
