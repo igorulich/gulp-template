@@ -4,8 +4,9 @@
   "description": "main new version project gulp of update 05.08.2024.",
   "main": "index.html",
   "scripts": {
-    "clean": "rimraf maps",
-    "gulp": "gulp"
+    "clean": "rimraf maps assets",
+    "dev": "gulp --development",
+    "prod":"gulp --production"
   },
   "keywords": [
     "scripts"
