@@ -31,6 +31,24 @@ exports.Scripts = Scripts;
 exports.Html = Html;
 exports.watch = watch;
 exports.Browsersync = Browsersync;
+exports.production = production;
+
+function production() {
+  const production = series(
+    Clean,
+    parallel(FontsWoff),
+    parallel(FontsWoff2),
+    parallel(AvifImages),
+    parallel(WebpImages),
+    parallel(Sprite),
+    parallel(Resources),
+    parallel(Styles),
+    parallel(Scripts),
+    parallel(Html),
+    parallel(Browsersync),
+  );
+  production();
+}
 const development = series(
   Clean,
   parallel(FontsWoff),
@@ -44,17 +62,5 @@ const development = series(
   parallel(Html),
   parallel(Browsersync),
 );
-const production = series(
-  Clean,
-  parallel(FontsWoff),
-  parallel(FontsWoff2),
-  parallel(AvifImages),
-  parallel(WebpImages),
-  parallel(Sprite),
-  parallel(Resources),
-  parallel(Styles),
-  parallel(Scripts),
-  parallel(Html),
-  parallel(Browsersync),
-);
+
 export default development;
