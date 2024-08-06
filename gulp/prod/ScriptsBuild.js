@@ -11,7 +11,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var plumber = require("gulp-plumber");
 var browserSync = require('browser-sync').create();
 let uglify = require('gulp-uglify-es').default;
- const Scripts=(cb)=> {
+const ScriptsBuild =(cb)=> {
   return (
     src(config.scripts.src)
       .pipe(webpackStream({
@@ -41,9 +41,9 @@ let uglify = require('gulp-uglify-es').default;
       .pipe(uglify().on("error", notify.onError()))
       .pipe(rename({ basename: "scripts", suffix: ".min", extname: ".js" }))
       .pipe(sourcemaps.write("../../maps"))
-      .pipe(dest(config.scripts.dest))
+      .pipe(dest(config.scripts.dist))
       .pipe(browserSync.stream()), 
     cb()
   );
 }
-module.exports = { Scripts };
+module.exports = { ScriptsBuild };

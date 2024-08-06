@@ -8,7 +8,7 @@ var postcss = require("gulp-postcss");
 var plumber = require("gulp-plumber");
 var browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
-function Styles(cb) {
+function StylesBuild(cb) {
   return (
     src(config.styles.src)
       .pipe(sourcemaps.init())
@@ -27,9 +27,9 @@ function Styles(cb) {
       )
       .pipe(rename({ basename: "styles", suffix: ".min", extname: ".css" }))
       .pipe(sourcemaps.write("../../maps"))
-      .pipe(dest(config.styles.dest))
+      .pipe(dest(config.styles.dist))
       .pipe(browserSync.reload({ stream: true })),
     cb()
   );
 }
-module.exports = { Styles };
+module.exports = { StylesBuild };

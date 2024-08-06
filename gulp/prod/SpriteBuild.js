@@ -3,7 +3,7 @@ const { src, dest } = require("gulp");
 const config = require("../../paths.js");
 const svgSprite = require("gulp-svg-sprite");
 
-function Sprite(cb) {
+function SpriteBuild(cb) {
   return (
     src(config.sprite.src)
       .pipe(
@@ -32,8 +32,8 @@ function Sprite(cb) {
           },
         })
       )
-      .pipe(dest(config.sprite.dest)),
+      .pipe(dest(config.sprite.dist)),
     cb()
   );
 }
-module.exports = { Sprite };
+module.exports = { SpriteBuild };

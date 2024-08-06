@@ -4,8 +4,8 @@ const config = require("../../paths.js");
 const fileinclude = require("gulp-file-include");
 var browserSync = require('browser-sync').create();
 var rename = require("gulp-rename");
-var gulpHtmlBemValidator = require("gulp-html-bem-validator");
-function Html(cb) {
+
+function HtmlBuild(cb) {
   return (
     src(config.html.src)
       .pipe(
@@ -13,16 +13,15 @@ function Html(cb) {
           prefix: "@@",
           basepath: "@file",
         })
-    )
+      )
       .pipe(
         rename({
           basename: "index",
         }),
       )
-      .pipe(dest(config.html.dest))
-      .pipe(browserSync.reload({ stream: true }))
-     .pipe(gulpHtmlBemValidator()),
+      .pipe(dest(config.html.dist))
+      .pipe(browserSync.reload({ stream: true })),
     cb()
   );
 }
-module.exports = { Html };
+module.exports = { HtmlBuild };
