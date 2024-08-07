@@ -19,22 +19,14 @@ import { BrowsersyncBuild } from "./gulp/prod/BrowsersyncBuild.js";
 import config from "./paths.js";
 import { WebpImages } from "./gulp/dev/WebpImages.js";
 import { WebpImagesBuild } from "./gulp/prod/WebpImagesBuild.js";
-import { AvifImages } from "./gulp/dev/AvifImages.js";
-import { AvifImagesBuild } from "./gulp/prod/AvifImagesBuild.js";
 import { FontsWoff2 } from "./gulp/dev/FontsWoff2.js";
 import { FontsWoff2Build } from "./gulp/prod/FontsWoff2Build.js";
-import { FontsWoff } from "./gulp/dev/FontsWoff.js";
-import { FontsWoffBuild } from "./gulp/prod/FontsWoffBuild.js";
 export const sass = gulpSass(dartSass);
 export const uglify = require("gulp-uglify-es").default;
 export const htmlmin = require('gulp-htmlmin');
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
 const fs = require('fs');
-exports.FontsWoff = FontsWoff;
-exports.FontsWoffBuild = FontsWoffBuild;
-exports.AvifImages = AvifImages;
-exports.AvifImagesBuild = AvifImagesBuild;
 exports.FontsWoff2 = FontsWoff2;
 exports.FontsWoff2Build = FontsWoff2Build;
 exports.WebpImages = WebpImages;
@@ -59,9 +51,7 @@ exports.development = development;
 function production() {
   const production = series(
     CleanBuild,
-    parallel(FontsWoffBuild),
     parallel(FontsWoff2Build),
-    parallel(AvifImagesBuild),
     parallel(WebpImagesBuild),
     parallel(SpriteBuild),
     parallel(ResourcesBuld),
@@ -75,9 +65,7 @@ function production() {
 function development() {
  const development = series(
   Clean,
-  parallel(FontsWoff),
   parallel(FontsWoff2),
-  parallel(AvifImages),
   parallel(WebpImages),
   parallel(Sprite),
   parallel(Resources),
