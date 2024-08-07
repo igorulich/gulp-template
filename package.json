@@ -1,12 +1,14 @@
 {
   "name": "template-gulp",
   "version": "1.0.0",
+  "homepage": " https://igorulich.github.io/",
   "description": "main new version project gulp of update 05.08.2024.",
   "main": "index.html",
   "scripts": {
     "clean": "rimraf maps assets dist",
     "dev": "gulp development",
-    "prod": "gulp production"
+    "prod": "gulp production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "scripts"
@@ -22,6 +24,7 @@
     "@babel/register": "^7.23.7",
     "babel-loader": "^9.1.3",
     "browser-sync": "^3.0.2",
+    "gh-pages": "^6.1.1",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
