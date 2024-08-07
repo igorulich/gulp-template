@@ -2,6 +2,7 @@
 const { src, dest } = require("gulp");
 const config = require("../../paths.js");
 const fileinclude = require("gulp-file-include");
+const htmlmin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 var rename = require("gulp-rename");
 
@@ -18,7 +19,8 @@ function HtmlBuild(cb) {
         rename({
           basename: "index",
         }),
-      )
+    )
+      .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(dest(config.html.dist))
       .pipe(browserSync.reload({ stream: true })),
     cb()

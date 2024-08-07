@@ -27,6 +27,7 @@ import { FontsWoff } from "./gulp/dev/FontsWoff.js";
 import { FontsWoffBuild } from "./gulp/prod/FontsWoffBuild.js";
 export const sass = gulpSass(dartSass);
 export const uglify = require("gulp-uglify-es").default;
+export const htmlmin = require('gulp-htmlmin');
 export var browserSync = require("browser-sync").create();
 export var reload = browserSync.reload;
 const fs = require('fs');
@@ -58,8 +59,8 @@ exports.development = development;
 function production() {
   const production = series(
     CleanBuild,
-    parallel(FontsWoff),
-    parallel(FontsWoff2),
+    parallel(FontsWoffBuild),
+    parallel(FontsWoff2Build),
     parallel(AvifImagesBuild),
     parallel(WebpImagesBuild),
     parallel(SpriteBuild),

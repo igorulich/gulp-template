@@ -4,9 +4,9 @@
   "description": "main new version project gulp of update 05.08.2024.",
   "main": "index.html",
   "scripts": {
-    "clean": "rimraf maps assets",
+    "clean": "rimraf maps assets dist",
     "dev": "gulp development",
-    "prod":"gulp production"
+    "prod": "gulp production"
   },
   "keywords": [
     "scripts"
@@ -45,6 +45,7 @@
     "browserslist": "^4.6.3",
     "fs": "^0.0.1-security",
     "gulp-avif": "^1.1.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-notify": "^4.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
