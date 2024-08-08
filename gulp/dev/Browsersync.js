@@ -1,7 +1,7 @@
 "use strict";
 const { watch } = require("gulp");
 const config = require("../../paths.js");
-const  {Styles } = require("./Styles.js");
+const { Styles } = require("./Styles.js");
 const { Scripts } = require("./Scripts.js");
 const { Html } = require("./Html.js");
 var browserSync = require('browser-sync').create();
@@ -18,7 +18,7 @@ function Browsersync(cb) {
     }),
     watch(config.scripts.watch, Scripts, reload),
     watch(config.styles.watch, Styles, reload),
-    watch(config.html.watch, Html).on("change", browserSync.reload),
+    watch(config.html.watch, Html).on("change", browserSync.reload), 
     cb();
 }
 module.exports = { Browsersync };
