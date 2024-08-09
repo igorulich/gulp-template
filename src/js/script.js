@@ -16,7 +16,7 @@ function random(min, max){
 }
 
 Array.from(split.querySelectorAll('.letter')).forEach((el, idx) => {
-	TweenMax.from(el, 2.5, {
+	TweenMax.from(el, 1.5, {
 		opacity: 0,
 		scale: .1,
 		x: random(-500, 500),
