@@ -13,7 +13,7 @@ function Styles(cb) {
     src(config.styles.src)
       .pipe(sourcemaps.init())
       .pipe(plumber())
-      .pipe(sass({ outputStyle: "compressed" }))
+      .pipe(sass({ outputStyle: "expanded" }))
       .pipe(
         postcss([
           autoprefixer(

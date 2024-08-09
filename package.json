@@ -5,6 +5,7 @@
   "description": "main new version project gulp of update 05.08.2024.",
   "main": "index.html",
   "scripts": {
+    "install": "npm install",
     "clean": "rimraf maps assets dist",
     "dev": "gulp development",
     "prod": "gulp production",
