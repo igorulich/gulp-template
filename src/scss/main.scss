@@ -8,9 +8,28 @@
 @import "./fonts";
 
 body {
+
+  background: $bg;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.text {
+  max-width: 1000px;
   text-transform: uppercase;
   font-size: calc(19px + 18 * (100vw / 1920));
   line-height: calc(11px + 4.135417vh);
   word-spacing: calc(0.1px + 0.015625vw);
-  background: $bg;
+}
+
+.text div {
+  display: inline-block;
+}
+
+.letter {
+  color: rgb(21, 18, 206);
 }
