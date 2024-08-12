@@ -8,36 +8,13 @@
 @import "./fonts";
 
 body {
-
+font-family: beer money;
   background: $bg;
-  min-height: 100vh;
+  color:$text;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
   overflow-x: hidden;
 }
 
-.text {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: calc(19px + 18 * (100vw / 1920));
-  line-height: calc(11px + 4.135417vh);
-  word-spacing: calc(0.1px + 0.015625vw);
-  overflow: hidden;
- 
- 
-}
-
-.text div {
-  display: inline-block;
-}
-
-.letter {
-  color: rgb(21, 18, 206);
-}
