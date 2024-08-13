@@ -1,5 +1,23 @@
-.location {
+.audit {
     background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.audit-dims {
+    width: 73px;
+    height: 64px;
+}
+
+.home {
+    background: url("sprite.svg") 58.4% 55.172413793103445% no-repeat;
+}
+
+.home-dims {
+    width: 67px;
+    height: 64px;
+}
+
+.location {
+    background: url("sprite.svg") 84.33734939759036% 83.11688311688312% no-repeat;
 }
 
 .location-dims {
@@ -8,19 +26,10 @@
 }
 
 .mail {
-    background: url("sprite.svg") 50% 50% no-repeat;
-}
-
-.mail-dims {
-    width: 26px;
-    height: 26px;
-}
-
-.phone {
     background: url("sprite.svg") 100% 100% no-repeat;
 }
 
-.phone-dims {
+.mail-dims {
     width: 26px;
     height: 26px;
 }
