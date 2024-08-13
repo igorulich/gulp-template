@@ -2,39 +2,9 @@
     background: url("sprite.svg") no-repeat;
 }
 
-.audit {
-    @extend %svg-common;
-    background-position: 0 0;
-}
-
-.audit-dims {
-    width: 73px;
-    height: 64px;
-}
-
-.brief-bag {
-    @extend %svg-common;
-    background-position: 33.48623853211009% 31.067961165048544%;
-}
-
-.brief-bag-dims {
-    width: 57px;
-    height: 54px;
-}
-
-.home {
-    @extend %svg-common;
-    background-position: 62.5% 60.204081632653065%;
-}
-
-.home-dims {
-    width: 67px;
-    height: 64px;
-}
-
 .location {
     @extend %svg-common;
-    background-position: 79.11646586345381% 77.77777777777777%;
+    background-position: 0 0;
 }
 
 .location-dims {
@@ -44,7 +14,7 @@
 
 .mail {
     @extend %svg-common;
-    background-position: 89.5582329317269% 88.88888888888889%;
+    background-position: 50% 50%;
 }
 
 .mail-dims {
