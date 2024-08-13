@@ -1,4 +1,4 @@
-.mail, .location, .home, .audit {
+.phone, .mail, .location, .home, .brief-bag, .audit {
   background: url("sprite.svg") no-repeat;
 }
 
@@ -11,8 +11,17 @@
   height: 64px;
 }
 
+.brief-bag {
+  background-position: 33.4862385321% 31.067961165%;
+}
+
+.brief-bag-dims {
+  width: 57px;
+  height: 54px;
+}
+
 .home {
-  background-position: 58.4% 55.1724137931%;
+  background-position: 62.5% 60.2040816327%;
 }
 
 .home-dims {
@@ -21,7 +30,7 @@
 }
 
 .location {
-  background-position: 84.3373493976% 83.1168831169%;
+  background-position: 79.1164658635% 77.7777777778%;
 }
 
 .location-dims {
@@ -30,10 +39,19 @@
 }
 
 .mail {
-  background-position: 100% 100%;
+  background-position: 89.5582329317% 88.8888888889%;
 }
 
 .mail-dims {
+  width: 26px;
+  height: 26px;
+}
+
+.phone {
+  background-position: 100% 100%;
+}
+
+.phone-dims {
   width: 26px;
   height: 26px;
 }

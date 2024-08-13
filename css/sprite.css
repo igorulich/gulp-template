@@ -7,8 +7,17 @@
     height: 64px;
 }
 
+.brief-bag {
+    background: url("sprite.svg") 33.48623853211009% 31.067961165048544% no-repeat;
+}
+
+.brief-bag-dims {
+    width: 57px;
+    height: 54px;
+}
+
 .home {
-    background: url("sprite.svg") 58.4% 55.172413793103445% no-repeat;
+    background: url("sprite.svg") 62.5% 60.204081632653065% no-repeat;
 }
 
 .home-dims {
@@ -17,7 +26,7 @@
 }
 
 .location {
-    background: url("sprite.svg") 84.33734939759036% 83.11688311688312% no-repeat;
+    background: url("sprite.svg") 79.11646586345381% 77.77777777777777% no-repeat;
 }
 
 .location-dims {
@@ -26,10 +35,19 @@
 }
 
 .mail {
-    background: url("sprite.svg") 100% 100% no-repeat;
+    background: url("sprite.svg") 89.5582329317269% 88.88888888888889% no-repeat;
 }
 
 .mail-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.phone {
+    background: url("sprite.svg") 100% 100% no-repeat;
+}
+
+.phone-dims {
     width: 26px;
     height: 26px;
 }
