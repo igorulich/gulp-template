@@ -153,7 +153,7 @@ section.footer {
 
 @font-face {
   font-family: beer money;
-  src: url("../fonts/beer money.woff2") format("woff2");
+  src: url("../../fonts/beer money.woff2") format("woff2");
 }
 body {
   font-family: beer money;
