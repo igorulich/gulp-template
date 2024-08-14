@@ -25,17 +25,15 @@ section.content {
 
 }
 
-.text::nth-child(n) {
-  color: red;
-
-}
-
 .letter {
+  font-family: "Matemasie", sans-serif;
+  font-weight: bold;
+  font-style: normal;
   color: $text;
   text-transform: lowercase;
   font-size: calc(21px + 3.9375vw);
   line-height: calc(21px + 9.135417vh);
-  font-weight: bold;
+
 
 }
 
@@ -58,7 +56,7 @@ section.content {
 
 a.zip {
   position: absolute;
-  bottom: 18px;
+  bottom: 18%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -67,13 +65,19 @@ a.zip {
   color: $bg;
   background: $text;
   text-align: center;
-  text-transform: lowercase;
+ 
   font-size: calc(10px + 0.9375vw);
   line-height: calc(11px + 0.135417vh);
-  border: solid 1px $text;
-  padding: 8px 16px;
+  border: solid 8px $text;
+  padding: 24px 16px;
   border-radius: 17px;
   width: 20%;
   z-index: z('zip');
   cursor: pointer;
+  &:hover{
+    background: $bg;
+    color: $text;
+    transition-delay: all 0.7s linear;
+ 
+  }
 }
