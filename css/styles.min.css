@@ -80,7 +80,7 @@ section.content {
   height: 100%;
   padding: 10% 17% 10% 15%;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 .text div {
@@ -92,7 +92,7 @@ section.content {
 }
 
 .letter {
-  color: #082502;
+  color: #093600;
   text-transform: lowercase;
   font-size: -webkit-calc(21px + 3.9375vw);
   font-size: calc(21px + 3.9375vw);
@@ -119,6 +119,30 @@ section.content {
   z-index: 1;
 }
 
+a.zip {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #b2ff94;
+  background: #1554c9;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: -webkit-calc(10px + 0.9375vw);
+  font-size: calc(10px + 0.9375vw);
+  line-height: -webkit-calc(11px + 0.135417vh);
+  line-height: calc(11px + 0.135417vh);
+  border: solid 1px #1554c9;
+  padding: 8px 16px;
+  border-radius: 17px;
+  width: 20%;
+  z-index: 2;
+  cursor: pointer;
+}
+
 section.footer {
   position: relative;
   top: 0;
@@ -134,7 +158,7 @@ section.footer {
 body {
   font-family: beer money;
   background: #b2ff94;
-  color: #1d1d1d;
+  color: #1554c9;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -18,7 +18,7 @@ function BrowsersyncBuild(cb) {
     }),
     watch(config.scripts.watch, Scripts, reload),
     watch(config.styles.watch, Styles, reload),
-    watch(config.html.watch, Html).on("change", browserSync.reload),
+    watch(config.html.watch, Html).on("change", browserSync.reload);
     cb();
 }
 module.exports = { BrowsersyncBuild };

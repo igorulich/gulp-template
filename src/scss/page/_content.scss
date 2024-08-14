@@ -17,7 +17,7 @@ section.content {
   height: 100%;
   padding: 10% 17% 10% 15%;
   text-align: center;
-z-index: z('text');
+  z-index: z('text');
 }
 
 .text div {
@@ -31,7 +31,7 @@ z-index: z('text');
 }
 
 .letter {
-  color: $descr;
+  color: $text;
   text-transform: lowercase;
   font-size: calc(21px + 3.9375vw);
   line-height: calc(21px + 9.135417vh);
@@ -47,11 +47,33 @@ z-index: z('text');
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
- 
+
   left: 0;
   margin: 0 auto;
   right: 0;
   width: 256px;
   height: 256px;
   z-index: z('image');
+}
+
+a.zip {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bg;
+  background: $text;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: calc(10px + 0.9375vw);
+  line-height: calc(11px + 0.135417vh);
+  border: solid 1px $text;
+  padding: 8px 16px;
+  border-radius: 17px;
+  width: 20%;
+  z-index: z('zip');
+  cursor: pointer;
 }
