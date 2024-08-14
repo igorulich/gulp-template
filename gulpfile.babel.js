@@ -68,8 +68,8 @@ function development(cb) {
     parallel(FontsWoff2),
     parallel(WebpImages),
     parallel(Resources),
-    parallel(Scripts),
     parallel(Styles),
+    parallel(Scripts), 
     parallel(Sprite),
     parallel(Html),
     parallel(Browsersync)
