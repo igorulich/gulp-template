@@ -1,0 +1,54 @@
+.audit {
+    background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.audit-dims {
+    width: 73px;
+    height: 64px;
+}
+
+.brief-bag {
+    background: url("sprite.svg") 33.48623853211009% 31.067961165048544% no-repeat;
+}
+
+.brief-bag-dims {
+    width: 57px;
+    height: 54px;
+}
+
+.home {
+    background: url("sprite.svg") 62.5% 60.204081632653065% no-repeat;
+}
+
+.home-dims {
+    width: 67px;
+    height: 64px;
+}
+
+.location {
+    background: url("sprite.svg") 79.11646586345381% 77.77777777777777% no-repeat;
+}
+
+.location-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.mail {
+    background: url("sprite.svg") 89.5582329317269% 88.88888888888889% no-repeat;
+}
+
+.mail-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.phone {
+    background: url("sprite.svg") 100% 100% no-repeat;
+}
+
+.phone-dims {
+    width: 26px;
+    height: 26px;
+}
+
