@@ -4,6 +4,7 @@ const { watch } = require("browser-sync");
 
 const config = {
   server: `./assets`,
+  serverBuild:`./dist`,
   styles: {
     src: `./src/scss/*.scss`,
     dest: `./assets/css`,
