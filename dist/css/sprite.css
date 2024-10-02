@@ -1,0 +1,27 @@
+.audit {
+    background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.audit-dims {
+    width: 73px;
+    height: 64px;
+}
+
+.mail {
+    background: url("sprite.svg") 73.73737373737374% 71.11111111111111% no-repeat;
+}
+
+.mail-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.phone {
+    background: url("sprite.svg") 100% 100% no-repeat;
+}
+
+.phone-dims {
+    width: 26px;
+    height: 26px;
+}
+

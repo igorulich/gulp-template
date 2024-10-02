@@ -26,6 +26,7 @@ const config = {
   resources: {
     src: `./src/resources/*.*`,
     dest: `./assets`,
+    prod:`./dist`,
     watch: `./src/resources/*.*`
   },
   images: {
